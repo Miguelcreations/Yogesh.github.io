@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Hacking Mastery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ethical Hacking Mastery</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#forum">Forum</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <h2>Welcome to Ethical Hacking Mastery</h2>
+            <p>Explore, learn, and practice ethical hacking techniques to become a cybersecurity expert. Our platform provides tutorials, tools, resources, and community support for your journey.</p>
+        </section>
+
+        <!-- Topics Section -->
+        <section id="topics">
+            <h2>Master Topics</h2>
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <h3>Information Gathering</h3>
+                    <p>Learn techniques like WHOIS lookup, Google Dorking, and social engineering to gather critical information.</p>
+                    <button onclick="openTopic('information-gathering')">Learn More</button>
+                </div>
+                <div class="topic-card">
+                    <h3>Scanning Networks</h3>
+                    <p>Master tools like Nmap and Netcat to identify open ports and vulnerable services.</p>
+                    <button onclick="openTopic('scanning')">Learn More</button>
+                </div>
+                <div class="topic-card">
+                    <h3>Exploitation</h3>
+                    <p>Learn to exploit vulnerabilities using Metasploit, reverse shells, and payload creation.</p>
+                    <button onclick="openTopic('exploitation')">Learn More</button>
+                </div>
+                <div class="topic-card">
+                    <h3>Web Application Security</h3>
+                    <p>Dive into OWASP top 10 vulnerabilities such as XSS, SQL Injection, and CSRF.</p>
+                    <button onclick="openTopic('web-security')">Learn More</button>
+                </div>
+                <div class="topic-card">
+                    <h3>Wireless Hacking</h3>
+                    <p>Understand WPA/WPA2 cracking, Evil Twin attacks, and wireless reconnaissance.</p>
+                    <button onclick="openTopic('wireless-hacking')">Learn More</button>
+                </div>
+                <div class="topic-card">
+                    <h3>Post Exploitation</h3>
+                    <p>Discover ways to maintain access, pivot through networks, and escalate privileges.</p>
+                    <button onclick="openTopic('post-exploitation')">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources">
+            <h2>Comprehensive Resources</h2>
+            <div class="resource-category">
+                <h3>Books</h3>
+                <ul id="books-resources">
+                    <li><a href="https://example.com/book1" target="_blank">The Web Application Hacker's Handbook</a></li>
+                    <li><a href="https://example.com/book2" target="_blank">Hacking: The Art of Exploitation</a></li>
+                </ul>
+            </div>
+            <div class="resource-category">
+                <h3>Courses</h3>
+                <ul id="courses-resources">
+                    <li><a href="https://example.com/course1" target="_blank">Certified Ethical Hacker (CEH)</a></li>
+                    <li><a href="https://example.com/course2" target="_blank">Practical Ethical Hacking</a></li>
+                </ul>
+            </div>
+            <div class="resource-category">
+                <h3>Documentation</h3>
+                <ul id="documentation-resources">
+                    <li><a href="https://www.kali.org/docs/" target="_blank">Kali Linux Documentation</a></li>
+                    <li><a href="https://example.com/tool2" target="_blank">Metasploit Documentation</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section id="tools">
+            <h2>Essential Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Kali Linux</h3>
+                    <p>The most widely used penetration testing operating system.</p>
+                    <a href="https://www.kali.org" target="_blank">Learn More</a>
+                </div>
+                <div class="tool-card">
+                    <h3>Metasploit</h3>
+                    <p>Explore vulnerabilities and exploit systems using Metasploit.</p>
+                    <a href="https://www.metasploit.com" target="_blank">Learn More</a>
+                </div>
+                <div class="tool-card">
+                    <h3>Wireshark</h3>
+                    <p>Analyze network traffic and find potential weaknesses.</p>
+                    <a href="https://www.wireshark.org" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Practical Projects</h2>
+            <p>Practice your skills by working on real-world projects:</p>
+            <ul>
+                <li>Setting up a virtual penetration testing lab.</li>
+                <li>Performing vulnerability assessments on a sample web application.</li>
+                <li>Creating a custom exploit using Metasploit.</li>
+                <li>Conducting wireless penetration testing on a test network.</li>
+            </ul>
+        </section>
+
+        <!-- Quizzes Section -->
+        <section id="quizzes">
+            <h2>Interactive Quizzes</h2>
+            <p>Test your knowledge with interactive quizzes covering key topics.</p>
+            <button id="start-quiz">Start Quiz</button>
+            <div id="quiz-container" class="hidden">
+                <p id="quiz-question"></p>
+                <ul id="quiz-options"></ul>
+                <p id="quiz-result"></p>
+            </div>
+        </section>
+
+        <!-- Forum Section -->
+        <section id="forum">
+            <h2>Community Forum</h2>
+            <p>Connect with fellow learners, ask questions, and discuss the latest in cybersecurity.</p>
+            <a href="forum.html" class="forum-link">Join the Forum</a>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Reach out for support or suggestions at <a href="mailto:support@ethicalhackingmastery.com">support@ethicalhackingmastery.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ethical Hacking Mastery | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
